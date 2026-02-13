@@ -1,5 +1,3 @@
-# Code à mettre dans: azure/function_app/RecommendFunction/__init__.py
-# (À copier-coller dans ton repo, ce n'est pas à exécuter dans le notebook)
 
 AZURE_FUNCTION_INIT_PY = r'''
 import json
