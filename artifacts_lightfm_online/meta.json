@@ -1,0 +1,9 @@
+{
+  "model": "LightFM_online",
+  "loss": "warp",
+  "no_components": 32,
+  "learning_rate": 0.05,
+  "n_users": 39218,
+  "n_items": 4097,
+  "top_k": 5
+}

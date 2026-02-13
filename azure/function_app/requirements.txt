@@ -1,0 +1,8 @@
+#azure-monitor-opentelemetry 
+azure-functions
+azure-storage-blob
+numpy
+pandas
+scipy
+lightfm
+pyarrow

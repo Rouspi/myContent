@@ -1,0 +1,9 @@
+{
+  "model": "LightFM_hybrid_embeddings",
+  "top_k": 5,
+  "n_users": 39218,
+  "n_items": 4097,
+  "loss": "warp",
+  "no_components": 32,
+  "learning_rate": 0.05
+}
