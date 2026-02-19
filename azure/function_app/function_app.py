@@ -131,7 +131,11 @@ def _recommend(engine: dict, user_id: int, k: int) -> tuple[list[int], str]:
 
     # --- Sélection rapide des meilleurs candidats (sur-échantillonnage pour filtrer "seen")
     candidate_n = min(len(scores), k * 50)
-    top_idx = np.argpartition(-scores, candidate_n)[:candidate_n]
+    # np.argpartition expects kth in [0, len(scores)-1]
+    if candidate_n <= 0:
+        return engine["trending"][:k], "trending"
+    kth = min(candidate_n - 1, len(scores) - 1)
+    top_idx = np.argpartition(-scores, kth)[:candidate_n]
     top_idx = top_idx[np.argsort(-scores[top_idx])]
 
     # --- Filtrage des items déjà vus + construction des recos
