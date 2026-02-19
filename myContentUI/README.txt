@@ -3,6 +3,12 @@ MyContentUI — Application Streamlit
 Description (1 phrase):
 - Interface web Streamlit qui appelle l'API de recommandation et affiche les articles recommandés pour un user_id.
 
+URL en ligne :
+- https://mycontentui.streamlit.app
+
+API utilisée :
+- https://mycontentapp-27366.azurewebsites.net/api/recommend
+
 Utilisation :
 1) Installer les dépendances
    pip install -r requirements.txt
